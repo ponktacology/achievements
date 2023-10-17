@@ -1,7 +1,6 @@
 package me.ponktacology.achievement;
 
 import com.google.common.base.Preconditions;
-import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 import java.text.DecimalFormat;
