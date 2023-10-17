@@ -1,0 +1,7 @@
+name: Achievements
+main: me.ponktacology.achievement.Plugin
+version: 1.0
+author: ponktacology
+api-version: 1.17
+commands:
+  achievements:
