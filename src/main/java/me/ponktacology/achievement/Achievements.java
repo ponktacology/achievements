@@ -12,7 +12,6 @@ public enum Achievements implements Achievement {
             "Walk 10 kilometers",
             Category.MOVEMENT,
             new ItemStack(Material.LEATHER_BOOTS), new ItemReward(new ItemStack(Material.DIAMOND_BOOTS)),
-            //distance^2 since we don't square while calculating distance
             10_000),
     CLIMBER("Climber",
             "Climb 1 kilometer",
