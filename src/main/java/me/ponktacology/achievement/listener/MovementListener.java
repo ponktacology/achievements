@@ -2,6 +2,7 @@ package me.ponktacology.achievement.listener;
 
 import me.ponktacology.achievement.AchievementService;
 import me.ponktacology.achievement.Achievements;
+import net.jafama.FastMath;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerMoveEvent;
@@ -22,7 +23,7 @@ public class MovementListener implements Listener {
 
         final var deltaX = from.getX() - to.getX();
         final var deltaZ = from.getZ() - to.getZ();
-        final var distanceXZ = Math.sqrt((deltaX * deltaX) + (deltaZ * deltaZ)); // Should use FastMath library here
+        final var distanceXZ = FastMath.sqrt((deltaX * deltaX) + (deltaZ * deltaZ));
 
         if (player.isSwimming()) {
             achievementService.incrementProgress(player, Achievements.SWIMMER, distanceXZ);

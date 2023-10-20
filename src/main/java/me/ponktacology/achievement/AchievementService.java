@@ -10,8 +10,9 @@ import java.util.concurrent.ConcurrentHashMap;
 public class AchievementService {
 
     private static final DecimalFormat PROGRESS_FORMAT = new DecimalFormat("#.##");
-    private final AchievementRepository achievementRepository;
+
     private final Map<UUID, AchievementProgressContainer> playerProgress = new ConcurrentHashMap<>();
+    private final AchievementRepository achievementRepository;
 
     public AchievementService(AchievementRepository achievementRepository) {
         this.achievementRepository = achievementRepository;
