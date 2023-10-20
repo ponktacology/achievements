@@ -3,7 +3,7 @@ package me.ponktacology.achievement;
 public class Progress {
 
     private final double target;
-    public double value;
+    private double value;
 
     public Progress(double target) {
         this.target = target;
